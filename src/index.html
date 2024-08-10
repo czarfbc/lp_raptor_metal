@@ -11,38 +11,40 @@
     <title>Document</title>
   </head>
   <body class="bg-[#fbfbfb]">
-    <!-- HEADER -->
-    <header class="bg-black flex justify-center items-center p-1.5">
-      <div
-        class="max-w-[1340px] mx-auto w-full text-white flex justify-center items-center"
-      >
-        <ul class="flex w-full justify-between items-center">
-          <li>
-            <i class="fa-solid fa-phone align-middle text-base"></i>
-            <a href="tel:+5594999722887" class="text-base">(94) 9997-22887</a>
-          </li>
-          <li>
-            <i class="fa-solid fa-envelope align-middle text-base"></i>
-            <a href="mailto:comercial@raptormetal.com.br" class="text-base">
-              comercial@raptormetal.com.br
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <div class="fixed z-10 w-full">
+      <!-- HEADER -->
+      <header class="bg-black flex justify-center items-center p-1.5">
+        <div
+          class="max-w-[1340px] mx-auto w-full text-white flex justify-center items-center"
+        >
+          <ul class="flex w-full justify-between items-center">
+            <li>
+              <i class="fa-solid fa-phone align-middle text-base"></i>
+              <a href="tel:+5594999722887" class="text-base">(94) 9997-22887</a>
+            </li>
+            <li>
+              <i class="fa-solid fa-envelope align-middle text-base"></i>
+              <a href="mailto:comercial@raptormetal.com.br" class="text-base">
+                comercial@raptormetal.com.br
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
 
-    <!-- MENU -->
-    <div>
-      <div
-        class="max-w-[1340px] mx-auto w-full text-black flex items-center gap-x-20"
-      >
-        <img src="assets/logo_com_nome.svg" />
-        <menu class="flex gap-x-28">
-          <a href="#home" class="text-base font-semibold">Home</a>
-          <a href="#quem_somos" class="text-base font-semibold">Quem Somos</a>
-          <a href="#servicos" class="text-base font-semibold">Serviços</a>
-          <a href="#contato" class="text-base font-semibold">Contato</a>
-        </menu>
+      <!-- MENU -->
+      <div class="bg-white">
+        <div
+          class="max-w-[1340px] mx-auto w-full text-black flex items-center gap-x-20"
+        >
+          <img src="assets/logo_com_nome.svg" />
+          <menu class="flex gap-x-28">
+            <a href="#home" class="text-base font-semibold">Home</a>
+            <a href="#quem_somos" class="text-base font-semibold">Quem Somos</a>
+            <a href="#servicos" class="text-base font-semibold">Serviços</a>
+            <a href="#contato" class="text-base font-semibold">Contato</a>
+          </menu>
+        </div>
       </div>
     </div>
 
@@ -95,7 +97,7 @@
     <!-- QUEM SOMOS -->
     <div
       id="quem_somos"
-      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full"
+      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full mb-28"
     >
       <h1 class="font-semibold text-8xl mb-20">QUEM SOMOS</h1>
       <div class="flex justify-between gap-x-20">
@@ -133,10 +135,147 @@
     </div>
 
     <!-- SERVICOS -->
-    <div></div>
+    <div
+      id="servicos"
+      class="text-black flex flex-col items-center mx-auto w-full pb-20 bg-[#F3F3F3] mb-28"
+    >
+      <div class="relative mb-20">
+        <img src="assets/banner_servico.svg" />
+        <div
+          class="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
+        >
+          <h1
+            class="font-semibold text-8xl text-white drop-shadow-[0px_0px_1px_rgba(0,0,0,1)]"
+          >
+            SERVIÇOS
+          </h1>
+        </div>
+      </div>
+
+      <div
+        class="flex max-w-[1340px] mx-auto w-full flex-wrap justify-between gap-y-16"
+      >
+        <div class="w-[280px] h-[310px] relative rounded-md">
+          <img src="assets/servico01.svg" />
+
+          <div
+            class="absolute w-[280px] h-[310px] rounded-md top-0 bg-gradient-to-t from-black to-45% flex justify-center"
+          >
+            <div class="relative h-fit top-2/3">
+              <h3
+                class="text-xl text-white font-semibold top-1/2 flex flex-col items-center"
+              >
+                Engenharia <span> Reversa </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[280px] h-[310px] relative rounded-md">
+          <img src="assets/servico02.svg" />
+
+          <div
+            class="absolute w-[280px] h-[310px] rounded-md top-0 bg-gradient-to-t from-black to-45% flex justify-center"
+          >
+            <div class="relative h-fit top-2/3">
+              <h3
+                class="text-xl text-white font-semibold top-1/2 flex flex-col items-center"
+              >
+                Projetos <span> Mecânicos </span>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[280px] h-[310px] relative rounded-md">
+          <img src="assets/servico03.svg" />
+
+          <div
+            class="absolute w-[280px] h-[310px] rounded-md top-0 bg-gradient-to-t from-black to-45% flex justify-center"
+          >
+            <div class="relative h-fit top-2/3">
+              <h3
+                class="text-xl text-white font-semibold top-1/2 flex flex-col items-center"
+              >
+                Fornecimento <span>de Peças</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[280px] h-[310px] relative rounded-md">
+          <img src="assets/servico04.svg" />
+
+          <div
+            class="absolute w-[280px] h-[310px] rounded-md top-0 bg-gradient-to-t from-black to-45% flex justify-center"
+          >
+            <div class="relative h-fit top-2/3">
+              <h3
+                class="text-xl text-white font-semibold top-1/2 flex flex-col items-center"
+              >
+                Reforma de Caminhões <span>e Equipamentos</span>
+              </h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="w-[280px] h-[310px] relative rounded-md">
+          <img src="assets/servico05.svg" />
+
+          <div
+            class="absolute w-[280px] h-[310px] rounded-md top-0 bg-gradient-to-t from-black to-45% flex justify-center"
+          >
+            <div class="relative h-fit top-2/3">
+              <h3 class="text-xl text-white font-semibold top-1/2">
+                Engenharia Reversa
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- CONTATO -->
-    <div></div>
+    <div
+      id="contato"
+      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full mb-28"
+    >
+      <h1 class="font-semibold text-8xl mb-20">CONTATO</h1>
+      <div class="flex justify-between w-full mb-20">
+        <input
+          type="text"
+          placeholder="Nome"
+          class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
+        />
+        <input
+          type="tel"
+          placeholder="Telefone"
+          class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
+        />
+      </div>
+
+      <div class="flex justify-center mb-20">
+        <textarea
+          name=""
+          id=""
+          placeholder="Mensagem"
+          class="w-[780px] h-[245px] pl-5 pt-5 text-start align-top border-solid border-2 border-black rounded-md"
+        ></textarea>
+      </div>
+
+      <div class="flex justify-center items-center">
+        <input
+          type="submit"
+          value="Enviar"
+          class="font-semibold text-base bg-green rounded-md px-16 p-6 text-white"
+        />
+      </div>
+    </div>
 
     <!-- FOOTER -->
     <footer
