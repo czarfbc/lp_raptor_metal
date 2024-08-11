@@ -8,21 +8,25 @@
       crossorigin="anonymous"
     ></script>
     <link href="./css/output.css" rel="stylesheet" />
+    <script src="js/index.js" defer></script>
     <title>Document</title>
   </head>
   <body class="bg-[#fbfbfb]">
+    <!-- HEADER -->
     <div class="fixed z-10 w-full">
-      <!-- HEADER -->
-      <header class="bg-black flex justify-center items-center p-1.5">
+      <header
+        id="header"
+        class="bg-black flex justify-center items-center p-1.5 duration-200 ease-in-out transition-all"
+      >
         <div
           class="max-w-[1340px] mx-auto w-full text-white flex justify-center items-center"
         >
           <ul class="flex w-full justify-between items-center">
-            <li>
+            <li class="align-text-top">
               <i class="fa-solid fa-phone align-middle text-base"></i>
               <a href="tel:+5594999722887" class="text-base">(94) 9997-22887</a>
             </li>
-            <li>
+            <li class="align-text-top">
               <i class="fa-solid fa-envelope align-middle text-base"></i>
               <a href="mailto:comercial@raptormetal.com.br" class="text-base">
                 comercial@raptormetal.com.br
@@ -35,25 +39,52 @@
       <!-- MENU -->
       <div class="bg-white">
         <div
+          id="header_menu"
           class="max-w-[1340px] mx-auto w-full text-black flex items-center gap-x-20"
         >
-          <img src="assets/logo_com_nome.svg" />
-          <menu class="flex gap-x-28">
-            <a href="#home" class="text-base font-semibold">Home</a>
-            <a href="#quem_somos" class="text-base font-semibold">Quem Somos</a>
-            <a href="#servicos" class="text-base font-semibold">Serviços</a>
-            <a href="#contato" class="text-base font-semibold">Contato</a>
+          <img
+            src="assets/logo_com_nome.svg"
+            id="image_header_menu"
+            class="duration-200 ease-in-out transition-all"
+          />
+          <menu class="flex items-center">
+            <ul class="flex gap-x-28 h-full items-center">
+              <li class="hover:scale-125">
+                <a href="#home" class="text-base font-semibold">Home</a>
+              </li>
+              <li class="hover:scale-125">
+                <a
+                  href="#quem_somos"
+                  class="text-base font-semibold hover:scale-125"
+                  >Quem Somos</a
+                >
+              </li>
+              <li class="hover:scale-125">
+                <a
+                  href="#servicos"
+                  class="text-base font-semibold hover:scale-125"
+                  >Serviços</a
+                >
+              </li>
+              <li class="hover:scale-125">
+                <a
+                  href="#contato"
+                  class="text-base font-semibold hover:scale-125"
+                  >Contato</a
+                >
+              </li>
+            </ul>
           </menu>
         </div>
       </div>
     </div>
 
     <!-- HOME -->
-    <div id="home" class="relative text-white mb-28">
+    <div id="home" class="relative text-white pt-[137px]">
       <img src="assets/banner0.svg" />
 
       <div
-        class="absolute w-full flex justify-between top-1/2 -translate-y-1/2"
+        class="absolute w-full flex justify-between top-1/2 -translate-y-1/2 pt-[137px]"
       >
         <div
           class="w-14 h-14 bg-green rounded-md flex justify-center items-center cursor-pointer"
@@ -69,7 +100,7 @@
       </div>
 
       <div
-        class="flex justify-center items-center flex-col gap-y-20 absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-[38%]"
+        class="flex justify-center items-center flex-col gap-y-20 absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-[38%] pt-[137px]"
       >
         <div>
           <h2 class="text-dark_white font-semibold text-xl">
@@ -84,7 +115,7 @@
       </div>
 
       <div
-        class="flex absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-3/4 justify-center items-center"
+        class="flex absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-3/4 justify-center items-center pt-[137px]"
       >
         <a
           href="#contato"
@@ -97,7 +128,7 @@
     <!-- QUEM SOMOS -->
     <div
       id="quem_somos"
-      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full mb-28"
+      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full pt-28 mb-28"
     >
       <h1 class="font-semibold text-8xl mb-20">QUEM SOMOS</h1>
       <div class="flex justify-between gap-x-20">
@@ -137,7 +168,7 @@
     <!-- SERVICOS -->
     <div
       id="servicos"
-      class="text-black flex flex-col items-center mx-auto w-full pb-20 bg-[#F3F3F3] mb-28"
+      class="text-black flex flex-col items-center mx-auto w-full pb-20 bg-[#F3F3F3] pt-12"
     >
       <div class="relative mb-20">
         <img src="assets/banner_servico.svg" />
@@ -238,7 +269,7 @@
     <!-- CONTATO -->
     <div
       id="contato"
-      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full mb-28"
+      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full mb-28 pt-28"
     >
       <h1 class="font-semibold text-8xl mb-20">CONTATO</h1>
       <div class="flex justify-between w-full mb-20">

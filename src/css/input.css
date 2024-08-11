@@ -11,3 +11,16 @@ html {
 * {
   font-family: 'Inter', sans-serif;
 }
+
+.scroll {
+  display: none;
+}
+
+.scroll_menu {
+  justify-content: space-between;
+}
+
+.scroll_image {
+  padding: 0;
+  width: 15%;
+}

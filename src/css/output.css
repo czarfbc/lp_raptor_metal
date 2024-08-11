@@ -594,10 +594,6 @@ video {
   z-index: 10;
 }
 
-.z-20 {
-  z-index: 20;
-}
-
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -613,6 +609,14 @@ video {
 
 .mb-28 {
   margin-bottom: 7rem;
+}
+
+.mt-28 {
+  margin-top: 7rem;
+}
+
+.mt-\[137px\] {
+  margin-top: 137px;
 }
 
 .flex {
@@ -638,6 +642,10 @@ video {
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-14 {
@@ -766,6 +774,11 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#000\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-t {
   background-image: linear-gradient(to top, var(--tw-gradient-stops));
 }
@@ -793,14 +806,14 @@ video {
   padding-right: 3rem;
 }
 
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-20 {
@@ -815,6 +828,38 @@ video {
   padding-top: 1.25rem;
 }
 
+.pt-28 {
+  padding-top: 7rem;
+}
+
+.pt-20 {
+  padding-top: 5rem;
+}
+
+.pt-16 {
+  padding-top: 4rem;
+}
+
+.pt-14 {
+  padding-top: 3.5rem;
+}
+
+.pt-12 {
+  padding-top: 3rem;
+}
+
+.pt-32 {
+  padding-top: 8rem;
+}
+
+.pt-48 {
+  padding-top: 12rem;
+}
+
+.pt-\[137px\] {
+  padding-top: 137px;
+}
+
 .text-start {
   text-align: start;
 }
@@ -825,6 +870,10 @@ video {
 
 .align-middle {
   vertical-align: middle;
+}
+
+.align-text-top {
+  vertical-align: text-top;
 }
 
 .text-2xl {
@@ -890,10 +939,43 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+.transition-all {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-200 {
+  transition-duration: 200ms;
+}
+
+.ease-in-out {
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 * {
   font-family: 'Inter', sans-serif;
+}
+
+.scroll {
+  display: none;
+}
+
+.scroll_menu {
+  justify-content: space-between;
+}
+
+.scroll_image {
+  padding: 0;
+  width: 15%;
+}
+
+.hover\:scale-125:hover {
+  --tw-scale-x: 1.25;
+  --tw-scale-y: 1.25;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
