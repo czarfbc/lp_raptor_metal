@@ -272,44 +272,55 @@
       class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full mb-28 pt-28"
     >
       <h1 class="font-semibold text-8xl mb-20">CONTATO</h1>
-      <div class="flex justify-between w-full mb-20">
-        <input
-          type="text"
-          placeholder="Nome"
-          required
-          class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
-        />
-        <input
-          type="email"
-          placeholder="Email"
-          required
-          class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
-        />
-        <input
-          type="tel"
-          placeholder="Telefone"
-          required
-          id="telefone"
-          class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
-        />
-      </div>
+      <form
+        target="_blank"
+        action="https://formsubmit.co/your@email.com"
+        method="POST"
+        class="w-full"
+      >
+        <div class="flex justify-between w-full mb-20">
+          <input
+            type="text"
+            placeholder="Nome"
+            name="Nome"
+            required
+            class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
+          />
+          <input
+            type="email"
+            placeholder="Email"
+            name="Email"
+            required
+            class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
+          />
+          <input
+            type="tel"
+            placeholder="Telefone"
+            required
+            id="telefone"
+            name="Telefone"
+            class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
+          />
+        </div>
 
-      <div class="flex justify-center mb-20">
-        <textarea
-          name=""
-          id=""
-          placeholder="Mensagem"
-          class="w-[780px] h-[245px] pl-5 pt-5 text-start align-top border-solid border-2 border-black rounded-md"
-        ></textarea>
-      </div>
+        <div class="flex justify-center mb-20">
+          <textarea
+            required
+            placeholder="Mensagem"
+            name="Mensagem"
+            class="w-[780px] h-[245px] pl-5 pt-5 text-start align-top border-solid border-2 border-black rounded-md resize-none"
+          ></textarea>
+        </div>
 
-      <div class="flex justify-center items-center">
-        <input
-          type="submit"
-          value="Enviar"
-          class="font-semibold text-base bg-green rounded-md px-16 p-6 text-white"
-        />
-      </div>
+        <div class="flex justify-center items-center">
+          <button
+            type="submit"
+            class="font-semibold text-base bg-green rounded-md px-16 p-6 text-white"
+          >
+            Enviar
+          </button>
+        </div>
+      </form>
     </div>
 
     <!-- FOOTER -->
