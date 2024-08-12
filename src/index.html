@@ -41,7 +41,7 @@
     <div class="fixed z-10 w-full">
       <header
         id="header"
-        class="bg-black flex justify-center items-center p-1.5 duration-200 ease-in-out transition-all"
+        class="bg-black flex justify-center items-center py-1.5 px-3 duration-200 ease-in-out transition-all"
       >
         <div
           class="max-w-[1340px] mx-auto w-full text-white flex justify-center items-center"
@@ -62,7 +62,7 @@
       </header>
 
       <!-- MENU -->
-      <div class="bg-white">
+      <div class="bg-white px-3">
         <div
           id="header_menu"
           class="max-w-[1340px] mx-auto w-full text-black flex items-center gap-x-20"
@@ -106,25 +106,34 @@
 
     <!-- HOME -->
     <div id="home" class="relative text-white pt-[137px]">
-      <img src="assets/banner0.svg" />
+      <div class="relative w-full max-h-[80vh] overflow-hidden">
+        <img
+          id="carousel-image"
+          src="assets/banner0.svg"
+          class="w-full h-full object-cover"
+        />
+      </div>
 
       <div
         class="absolute w-full flex justify-between top-1/2 -translate-y-1/2 pt-[137px]"
       >
         <div
-          class="w-14 h-14 bg-green rounded-md flex justify-center items-center cursor-pointer"
+          class="w-14 h-14 bg-green hover:bg-dark_green rounded-md flex justify-center items-center cursor-pointer"
+          onclick="previousSlide()"
         >
           <i class="fa-solid fa-chevron-left fa-2xl"></i>
         </div>
 
         <div
-          class="w-14 h-14 bg-green rounded-md flex justify-center items-center cursor-pointer"
+          class="w-14 h-14 bg-green hover:bg-dark_green rounded-md flex justify-center items-center cursor-pointer"
+          onclick="nextSlide()"
         >
           <i class="fa-solid fa-chevron-right fa-2xl"></i>
         </div>
       </div>
 
       <div
+        id="carousel-content"
         class="flex justify-center items-center flex-col gap-y-20 absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-[38%] pt-[137px]"
       >
         <div>
@@ -144,7 +153,7 @@
       >
         <a
           href="#contato"
-          class="font-semibold text-base bg-green rounded-md px-12 p-6"
+          class="font-semibold text-base bg-green rounded-md px-12 p-6 hover:bg-dark_green"
           >Entre em Contato</a
         >
       </div>
@@ -282,8 +291,10 @@
             class="absolute w-[280px] h-[310px] rounded-md top-0 bg-gradient-to-t from-black to-45% flex justify-center"
           >
             <div class="relative h-fit top-2/3">
-              <h3 class="text-xl text-white font-semibold top-1/2">
-                Engenharia Reversa
+              <h3
+                class="text-xl text-white font-semibold top-1/2 flex flex-col items-center"
+              >
+                Importação e <span>Nacionalização</span>
               </h3>
             </div>
           </div>
@@ -340,7 +351,7 @@
         <div class="flex justify-center items-center">
           <button
             type="submit"
-            class="font-semibold text-base bg-green rounded-md px-16 p-6 text-white"
+            class="font-semibold text-base bg-green hover:bg-dark_green rounded-md px-16 p-6 text-white"
           >
             Enviar
           </button>
