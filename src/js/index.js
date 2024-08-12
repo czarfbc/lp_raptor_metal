@@ -70,7 +70,7 @@ function updateSlide() {
   const carouselContent = document.getElementById('carousel-content');
 
   carouselImage.src = slides[currentSlide].image;
-  carouselContent.innerHTML = `
+  carouselContent.innerHTML = /* html */ `
     <div>
       <h2 class="text-dark_white font-semibold text-xl">
         ${slides[currentSlide].presentation}
