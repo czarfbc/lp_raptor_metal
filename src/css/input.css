@@ -13,14 +13,14 @@ html {
 }
 
 .scroll {
-  display: none;
+  display: none !important;
 }
 
 .scroll_menu {
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
 
 .scroll_image {
-  padding: 0;
-  width: 15%;
+  padding: 0 !important;
+  width: 15% !important;
 }

@@ -639,6 +639,10 @@ video {
   height: 70px;
 }
 
+.h-\[80vh\] {
+  height: 80vh;
+}
+
 .h-fit {
   height: -moz-fit-content;
   height: fit-content;
@@ -646,18 +650,6 @@ video {
 
 .h-full {
   height: 100%;
-}
-
-.h-\[80vh\] {
-  height: 80vh;
-}
-
-.max-h-\[80vh\] {
-  max-height: 80vh;
-}
-
-.max-h-\[60vh\] {
-  max-height: 60vh;
 }
 
 .min-h-32 {
@@ -804,6 +796,16 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-light_green {
+  --tw-bg-opacity: 1;
+  background-color: rgb(14 115 58 / var(--tw-bg-opacity));
+}
+
+.bg-dark_white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(217 217 217 / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-t {
@@ -994,16 +996,16 @@ html {
 }
 
 .scroll {
-  display: none;
+  display: none !important;
 }
 
 .scroll_menu {
-  justify-content: space-between;
+  justify-content: space-between !important;
 }
 
 .scroll_image {
-  padding: 0;
-  width: 15%;
+  padding: 0 !important;
+  width: 15% !important;
 }
 
 .hover\:scale-125:hover {
@@ -1086,11 +1088,6 @@ html {
     padding-top: 100px;
   }
 
-  .lg\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
   .lg\:text-5xl {
     font-size: 3rem;
     line-height: 1;
@@ -1099,6 +1096,11 @@ html {
   .lg\:text-7xl {
     font-size: 4.5rem;
     line-height: 1;
+  }
+
+  .lg\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
   }
 }
 
