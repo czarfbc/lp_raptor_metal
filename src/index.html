@@ -47,7 +47,7 @@
     <div class="fixed z-10 w-full">
       <header
         id="header"
-        class="bg-black flex justify-center items-center py-1.5 px-3 duration-200 ease-in-out transition-all"
+        class="hidden bg-black min-[500px]:flex justify-center items-center py-1.5 px-3 duration-200 ease-in-out transition-all"
       >
         <div
           class="max-w-[1340px] mx-auto w-full text-white flex justify-center items-center"
@@ -68,7 +68,7 @@
       </header>
 
       <!-- MENU -->
-      <div class="bg-white w-full px-3">
+      <div class="bg-white py-3 sm:py-0 w-full px-3">
         <div
           id="header_menu"
           class="max-w-[1340px] mx-auto w-full text-black flex items-center gap-x-20"
@@ -76,13 +76,13 @@
           <img
             src="assets/logo_com_nome.svg"
             id="image_header_menu"
-            class="duration-200 ease-in-out transition-all w-52 lg:w-64 xl:w-96"
+            class="duration-200 ease-in-out transition-all hidden sm:block sm:w-52 lg:w-64 xl:w-96"
           />
-          <menu class="flex items-center n w-full">
+          <menu class="flex items-center w-full">
             <ul
               class="flex justify-between xl:justify-normal w-full xl:gap-x-28 items-center text-base font-semibold"
             >
-              <li class="hover:scale-125">
+              <li class="hidden lg:block hover:scale-125">
                 <a href="#home">Home</a>
               </li>
               <li class="hover:scale-125">
@@ -161,14 +161,20 @@
     <!-- QUEM SOMOS -->
     <div
       id="quem_somos"
-      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full pt-32 lg:pt-28 lg:mb-28 mb-12"
+      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full pt-20 sm:pt-32 lg:pt-28 lg:mb-28 mb-12"
     >
-      <h1 class="font-semibold sm:text-6xl md:text-8xl mb-20">QUEM SOMOS</h1>
+      <h1 class="font-semibold text-4xl min-[455px]:text-6xl md:text-8xl mb-20">
+        QUEM SOMOS
+      </h1>
       <div class="flex justify-between gap-x-20 px-5 xl:px-0">
         <div class="">
           <div class="flex flex-col gap-8 mb-16">
-            <h2 class="text-green font-semibold text-5xl">Raptor Metal</h2>
-            <p class="font-semibold text-xl text-black">
+            <h2
+              class="text-green font-semibold text-2xl min-[455]:text-4xl sm:text-5xl"
+            >
+              Raptor Metal
+            </h2>
+            <p class="font-semibold text-base min-[455px]:text-xl text-black">
               Uma indústria há mais de 8 anos no mercado, especializada em
               fornecer as melhores soluções para máquinas e equipamentos
               pesados.
@@ -180,15 +186,23 @@
             </p>
           </div>
           <div class="flex flex-col gap-8 mb-16">
-            <h2 class="text-green font-semibold text-5xl">Missão</h2>
-            <p class="font-semibold text-xl text-black">
+            <h2
+              class="text-green font-semibold text-2xl min-[455]:text-4xl sm:text-5xl"
+            >
+              Missão
+            </h2>
+            <p class="font-semibold text-base min-[455px]:text-xl text-black">
               Atender com eficácia, tendo como base a ética, transparência e
               honestidade.
             </p>
           </div>
           <div class="flex flex-col gap-8 mb-16">
-            <h2 class="text-green font-semibold text-5xl">Visão</h2>
-            <p class="font-semibold text-xl text-black">
+            <h2
+              class="text-green font-semibold text-2xl min-[455]:text-4xl sm:text-5xl"
+            >
+              Visão
+            </h2>
+            <p class="font-semibold text-base min-[455px]:text-xl text-black">
               Ser referência em soluções de engenharia e manutenção de máquinas
               e equipamentos.
             </p>
@@ -204,12 +218,12 @@
       class="text-black flex flex-col items-center mx-auto w-full pb-20 bg-[#F3F3F3] pt-0 lg:pt-12"
     >
       <div class="relative mb-20">
-        <img src="assets/banner_servico.svg" />
+        <img src="assets/banner_servico.svg" class="min-h-32 object-cover" />
         <div
           class="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
         >
           <h1
-            class="font-semibold sm:text-6xl md:text-8xl text-white drop-shadow-[0px_0px_1px_rgba(0,0,0,1)]"
+            class="font-semibold text-4xl min-[455px]:text-6xl md:text-8xl text-white drop-shadow-[0px_0px_1px_rgba(0,0,0,1)]"
           >
             SERVIÇOS
           </h1>
@@ -306,7 +320,9 @@
       id="contato"
       class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full mb-28 pt-28"
     >
-      <h1 class="font-semibold sm:text-6xl md:text-8xl mb-20">CONTATO</h1>
+      <h1 class="font-semibold text-4xl min-[455px]:text-6xl md:text-8xl mb-20">
+        CONTATO
+      </h1>
       <form
         target="_blank"
         action="https://formsubmit.co/your@email.com"
@@ -321,14 +337,14 @@
             placeholder="Nome"
             name="Nome"
             required
-            class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
+            class="w-full sm:w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
           />
           <input
             type="email"
             placeholder="Email"
             name="Email"
             required
-            class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
+            class="w-full sm:w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
           />
           <input
             type="tel"
@@ -336,7 +352,7 @@
             required
             id="telefone"
             name="Telefone"
-            class="w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
+            class="w-full sm:w-[280px] h-[70px] pl-5 border-solid border-2 border-black rounded-md"
           />
         </div>
 
