@@ -33,8 +33,8 @@ function updateSlide() {
         </h2>
       </div>
       <div>
-        <h1 class="flex flex-col items-center font-semibold text-8xl gap-y-8">
-          <span class="text-6xl">${slides[currentSlide].title}</span> ${slides[currentSlide].subtitle}
+        <h1 class="flex flex-col items-center font-semibold lg:text-7xl xl:text-8xl gap-y-8">
+          <span class="lg:text-5xl xl:text-6xl">${slides[currentSlide].title}</span> ${slides[currentSlide].subtitle}
         </h1>
       </div>
     `;

@@ -7,13 +7,9 @@
       src="https://kit.fontawesome.com/fd1cb3abbc.js"
       crossorigin="anonymous"
     ></script>
-    <script src="js/updateSlide.js" crossorigin="anonymous" defer></script>
-    <script
-      src="js/adjustLayoutForScroll.js"
-      crossorigin="anonymous"
-      defer
-    ></script>
-    <script src="js/phoneInputMask.js" crossorigin="anonymous" defer></script>
+    <script src="js/updateSlide.js" defer></script>
+    <script src="js/phoneInputMask.js" defer></script>
+    <script src="js/adjustLayoutForScroll.js"></script>
     <link href="./css/output.css" rel="stylesheet" />
     <link
       rel="apple-touch-icon"
@@ -47,7 +43,7 @@
     <div class="fixed z-10 w-full">
       <header
         id="header"
-        class="hidden bg-black min-[500px]:flex justify-center items-center py-1.5 px-3 duration-200 ease-in-out transition-all"
+        class="hidden bg-black sm:flex justify-center items-center py-1.5 px-3 duration-200 ease-in-out transition-all"
       >
         <div
           class="max-w-[1340px] mx-auto w-full text-white flex justify-center items-center"
@@ -76,7 +72,7 @@
           <img
             src="assets/logo_com_nome.svg"
             id="image_header_menu"
-            class="duration-200 ease-in-out transition-all hidden sm:block sm:w-52 lg:w-64 xl:w-96"
+            class="scroll_image duration-200 ease-in-out transition-all hidden sm:block sm:w-52 lg:w-64 xl:w-96"
           />
           <menu class="flex items-center w-full">
             <ul
@@ -105,7 +101,7 @@
       id="home"
       class="hidden lg:block relative text-white lg:pt-[100px] xl:pt-[137px]"
     >
-      <div class="relative w-full max-h-[80vh] overflow-hidden">
+      <div class="relative w-full h-[80vh] overflow-hidden">
         <img
           id="carousel-image"
           src="assets/banner0.svg"
@@ -215,7 +211,7 @@
     <!-- SERVICOS -->
     <div
       id="servicos"
-      class="text-black flex flex-col items-center mx-auto w-full pb-20 bg-[#F3F3F3] pt-0 lg:pt-12"
+      class="text-black flex flex-col items-center mx-auto w-full pb-20 bg-[#F3F3F3] pt-0"
     >
       <div class="relative mb-20">
         <img src="assets/banner_servico.svg" class="min-h-32 object-cover" />
