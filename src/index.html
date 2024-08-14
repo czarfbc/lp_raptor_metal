@@ -68,7 +68,7 @@
       </header>
 
       <!-- MENU -->
-      <div class="bg-white px-3">
+      <div class="bg-white w-full px-3">
         <div
           id="header_menu"
           class="max-w-[1340px] mx-auto w-full text-black flex items-center gap-x-20"
@@ -76,33 +76,23 @@
           <img
             src="assets/logo_com_nome.svg"
             id="image_header_menu"
-            class="duration-200 ease-in-out transition-all"
+            class="duration-200 ease-in-out transition-all w-52 lg:w-64 xl:w-96"
           />
-          <menu class="flex items-center">
-            <ul class="flex gap-x-28 h-full items-center">
+          <menu class="flex items-center n w-full">
+            <ul
+              class="flex justify-between xl:justify-normal w-full xl:gap-x-28 items-center text-base font-semibold"
+            >
               <li class="hover:scale-125">
-                <a href="#home" class="text-base font-semibold">Home</a>
+                <a href="#home">Home</a>
               </li>
               <li class="hover:scale-125">
-                <a
-                  href="#quem_somos"
-                  class="text-base font-semibold hover:scale-125"
-                  >Quem Somos</a
-                >
+                <a href="#quem_somos">Quem Somos</a>
               </li>
               <li class="hover:scale-125">
-                <a
-                  href="#servicos"
-                  class="text-base font-semibold hover:scale-125"
-                  >Serviços</a
-                >
+                <a href="#servicos">Serviços</a>
               </li>
               <li class="hover:scale-125">
-                <a
-                  href="#contato"
-                  class="text-base font-semibold hover:scale-125"
-                  >Contato</a
-                >
+                <a href="#contato">Contato</a>
               </li>
             </ul>
           </menu>
@@ -111,7 +101,10 @@
     </div>
 
     <!-- HOME -->
-    <div id="home" class="relative text-white pt-[137px]">
+    <div
+      id="home"
+      class="hidden lg:block relative text-white lg:pt-[100px] xl:pt-[137px]"
+    >
       <div class="relative w-full max-h-[80vh] overflow-hidden">
         <img
           id="carousel-image"
@@ -168,10 +161,10 @@
     <!-- QUEM SOMOS -->
     <div
       id="quem_somos"
-      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full pt-28 mb-28"
+      class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full pt-32 lg:pt-28 lg:mb-28 mb-0"
     >
-      <h1 class="font-semibold text-8xl mb-20">QUEM SOMOS</h1>
-      <div class="flex justify-between gap-x-20">
+      <h1 class="font-semibold sm:text-6xl md:text-8xl mb-20">QUEM SOMOS</h1>
+      <div class="flex justify-between gap-x-20 px-5 xl:px-0">
         <div class="">
           <div class="flex flex-col gap-8 mb-16">
             <h2 class="text-green font-semibold text-5xl">Raptor Metal</h2>
@@ -201,14 +194,14 @@
             </p>
           </div>
         </div>
-        <img src="assets/quem_somos.svg" />
+        <img src="assets/quem_somos.svg" class="hidden xl:block" />
       </div>
     </div>
 
     <!-- SERVICOS -->
     <div
       id="servicos"
-      class="text-black flex flex-col items-center mx-auto w-full pb-20 bg-[#F3F3F3] pt-12"
+      class="text-black flex flex-col items-center mx-auto w-full pb-20 bg-[#F3F3F3] pt-0 lg:pt-12"
     >
       <div class="relative mb-20">
         <img src="assets/banner_servico.svg" />
@@ -216,7 +209,7 @@
           class="absolute -translate-x-1/2 -translate-y-1/2 left-1/2 top-1/2"
         >
           <h1
-            class="font-semibold text-8xl text-white drop-shadow-[0px_0px_1px_rgba(0,0,0,1)]"
+            class="font-semibold sm:text-6xl md:text-8xl text-white drop-shadow-[0px_0px_1px_rgba(0,0,0,1)]"
           >
             SERVIÇOS
           </h1>
@@ -224,7 +217,7 @@
       </div>
 
       <div
-        class="flex max-w-[1340px] mx-auto w-full flex-wrap justify-between gap-y-16"
+        class="flex max-w-[1340px] mx-auto w-full flex-wrap gap-x-5 justify-around xl:gap-x-0 xl:justify-between gap-y-16 lg:px-5"
       >
         <div class="w-[280px] h-[310px] relative rounded-md">
           <img src="assets/servico01.svg" />
@@ -313,14 +306,16 @@
       id="contato"
       class="text-black flex flex-col items-center max-w-[1340px] mx-auto w-full mb-28 pt-28"
     >
-      <h1 class="font-semibold text-8xl mb-20">CONTATO</h1>
+      <h1 class="font-semibold sm:text-6xl md:text-8xl mb-20">CONTATO</h1>
       <form
         target="_blank"
         action="https://formsubmit.co/your@email.com"
         method="POST"
-        class="w-full"
+        class="w-full px-5 xl:px-0"
       >
-        <div class="flex justify-between w-full mb-20">
+        <div
+          class="flex xl:justify-between flex-wrap gap-5 justify-around w-full mb-20"
+        >
           <input
             type="text"
             placeholder="Nome"
@@ -370,12 +365,12 @@
       class="bg-black flex flex-col items-center justify-center py-5 gap-2"
     >
       <div>
-        <img src="assets/logo.svg" />
+        <img src="assets/logo.svg" class="lg:w-32 xl:w-56" />
       </div>
       <a
         href="https://www.linkedin.com/in/cezar-fernando/"
         target="_blank"
-        class="text-white text-2xl font-medium"
+        class="text-white lg:text-lg xl:text-2xl font-medium"
         >Desenvolvido por @czarfbc</a
       >
     </footer>
