@@ -1,18 +1,18 @@
 const slides = [
   {
-    image: 'assets/banner0.svg',
+    image: 'assets/banner0.webp',
     presentation: 'ENCONTRE AQUI OS MELHORES',
     title: 'PROJETOS',
     subtitle: 'MECÂNICOS',
   },
   {
-    image: 'assets/banner1.svg',
+    image: 'assets/banner1.webp',
     presentation: 'ENCONTRE AQUI O MELHOR',
     title: 'FORNECIMENTO DE',
     subtitle: 'PEÇAS',
   },
   {
-    image: 'assets/banner2.svg',
+    image: 'assets/banner2.webp',
     presentation: 'ENCONTRE AQUI A MELHOR',
     title: 'ENGENHARIA',
     subtitle: 'REVERSA',
